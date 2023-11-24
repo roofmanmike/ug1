@@ -8,11 +8,16 @@ app.use(express.static('static'));
 
 // import { Config } from 'config.js';
 // add comment for push
-
+//This is the heroku app
 //keep app.use with app.get and this block serves index with
 //functioning links 
 app.use(bodyParser.urlencoded({extended: true}));
 app.post("/", function(req, res){
+  $('#log').click(function(){
+    const user_id = Number($('#user_id').val());
+    
+    alert(user_id);
+   });
   res.sendFile(__dirname + "/index.html");
 });
 app.post("/about.html", function(req, res){

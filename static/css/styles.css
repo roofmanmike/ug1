@@ -26,10 +26,13 @@ body{
   h1{
     color: white;
   }
+  .yellow{
+    background-color: yellow;
+  }
   input{
     background-color: rgb(60, 8, 247);
     border-radius: 7px;
-    color:white;
+    color:rgb(13, 144, 251);
   }
   @media screen and (min-width: 600px) {
 input{
